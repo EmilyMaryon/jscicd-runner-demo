@@ -27,6 +27,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: 'EmilyMaryon/jscicd-runner'
+          branch: 'main'
           token: ${{ github.token }}
 
       - name: setup node
@@ -57,6 +58,7 @@ jobs:
           uses: actions/checkout@v2
           with:
             repository: 'EmilyMaryon/jscicd-runner'
+            branch: 'main'
             token: ${{ github.token }}
 
         - name: Set up QEMU

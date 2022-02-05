@@ -1,0 +1,10 @@
+jscicd:
+  envVars:
+    - FOO=BAR
+    - TEST=YES
+  stages:
+    exampleStageName3:
+      zx:
+        - let example = "test"
+        - await $`apt install texlive-base`
+        - await $`mkdir ${example}`

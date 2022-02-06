@@ -6,5 +6,5 @@ jscicd:
     exampleStageName3:
       zx:
         - let example = "test"
-        - await $`apt install texlive-base`
+        - await $`apt -y install texlive-base`
         - await $`mkdir ${example}`

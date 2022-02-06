@@ -8,3 +8,5 @@ jscicd:
         - let example = "test"
         - await $`apt -y install texlive-base`
         - await $`mkdir ${example}`
+    stageName2:
+      fromFile: asd.mjs
